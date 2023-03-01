@@ -5,15 +5,14 @@ import { navs } from '../../utils/data';
 
 const Navbar = () => {
     return (
-        <div className="flex justify-between py-2">
-            <div className="flex flex-wrap items-center">
-                <img src={Logo} alt="logo" />
-                <p>MRVix</p>
+        <div className="flex justify-between">
+            <div>
+                <img src={Logo} alt="logo" width={"100px"} />
             </div>
             <div className="flex flex-wrap items-center">
                 <ul className="flex flex-wrap">
                     {
-                        navs.map((nav) => <li className="mr-3">
+                        navs.map((nav) => <li className="mr-3 text-sm">
                             <Link to={"/"}>{nav.name}</Link>
                         </li>)
                     }

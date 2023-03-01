@@ -13,7 +13,7 @@ const About = () => {
         <BaseContainer>
             <div className="grid grid-cols-2 py-20">
                 <div>
-                    <p className="text-4xl mb-6">What is MRV?</p>
+                    <p className="text-4xl mb-6 font-bold">What is MRV?</p>
                     {
                         aboutMrv.map(item => <div className="mb-6">
                             <div className="flex mb-1">

@@ -6,7 +6,7 @@ import BaseContainer from '../common/BaseContainer';
 
 const Banner = () => {
     return (
-        <div style={{ backgroundImage: "linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%)" }}>
+        <div style={{ backgroundImage: "linear-gradient(311.76deg, #80E0FF 20.53%, #FFFFFF 60.72%)" }}>
             <BaseContainer>
                 <Navbar />
             </BaseContainer>

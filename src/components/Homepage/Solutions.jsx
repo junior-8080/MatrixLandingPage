@@ -1,10 +1,11 @@
 import React from 'react';
 import { solutions } from '../../utils/data';
+import BaseContainer from '../common/BaseContainer';
 
 const Solutions = () => {
     return (
-        <div>
-            <div className="py-12" style={{ backgroundImage: "linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFFFFF 100%)" }}>
+        <div className="py-32" style={{ backgroundImage: "linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFFFFF 100%)" }}>
+            <BaseContainer>
                 <div className="mx-5">
                     <p className="text-center text-3xl font-bold py-5">Our Solution</p>
                     <p className="text-center text-lg font-semibold py-4 mb-8">We don't have much time for solving climate change, that's why we are developing a digital for <br /> automating Measuring, Reporting, and Verification process of carbon offsets.</p>
@@ -22,8 +23,9 @@ const Solutions = () => {
                         </div>)
                     }
                 </div>
-            </div>
+            </BaseContainer>
         </div>
+
     );
 }
 

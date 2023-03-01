@@ -1,4 +1,10 @@
 import FormIcon from "../images/FormIcon.svg";
+import BlockchainIcon from "../images/Blockchain.svg";
+import ReportsIcon from "../images/Report.svg";
+import MonitoringIcon from "../images/Monitoring.svg";
+import CalculatorIcon from "../images/Calculator.svg";
+import VerificationIcon from "../images/Verification.svg";
+import Image from "../images/img1.jpeg";
 
 export const socialHandles = [
   {
@@ -69,14 +75,17 @@ export const challenges = [
   {
     title: "Accracy",
     description: "90% of forestry projects overstated their carbon emissions",
+    cardBg: " linear-gradient(115.63deg, #FFFFFF 1.16%, #FF7979 100%)"
   },
   {
     title: "Time",
     description: " 2+ years to issue carbon credits",
+    cardBg: "linear-gradient(115.76deg, #FFFFFF 2.13%, #FFA132 98.2%)"
   },
   {
     title: "Cost",
     description: "70% of projects developers cost are spent on MRV",
+    cardBg: "linear-gradient(116.45deg, #FFFFFF 0%, #FBFF4D 100%)"
   },
 ];
 
@@ -89,26 +98,54 @@ export const solutions = [
   {
     title: "Report Generator",
     description: "Lorem",
-    icon: FormIcon,
+    icon: ReportsIcon,
   },
   {
     title: "Blockchain Technology",
     description: "",
-    icon: FormIcon,
+    icon: BlockchainIcon,
   },
   {
     title: "Monitoring & Forecasting",
     description: "Lorem",
-    icon: FormIcon,
+    icon: MonitoringIcon,
   },
   {
     title: "Carbon Emission Calculator",
     description: "",
-    icon: FormIcon,
+    icon:CalculatorIcon,
   },
   {
     title: "Automatic Verification",
     description: "Lorem",
-    icon: FormIcon,
+    icon: VerificationIcon,
   },
 ];
+
+export const members = [
+  {
+    name: "Jevan L",
+    image: Image,
+  },
+  {
+    name: "Nino L.",
+    image: Image,
+  },
+];
+
+export const articles = [
+    {
+        title: "📡 Making carbon credits more accurate, faster, and cheaper with decentralized MRV",
+        description: "Lorem",
+        image: Image,
+    },
+    {
+        title: "🌿 Why do we need on-chain carbon credits and how to buy them?",
+        description: "Lorem",
+        image: Image,
+    },  {
+        title: "🐋 Blue Carbon: underwater solution to climate change",
+        description: "Lorem",
+        image: Image,
+    }
+]
