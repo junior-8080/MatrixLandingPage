@@ -25,7 +25,7 @@ const Banner = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div className="w-full">
                         <img src={BannerImage} alt="banner" width={"100%"} />
                     </div>
                 </div>
