@@ -12,7 +12,7 @@ const Banner = () => {
             </BaseContainer>
             <hr />
             <BaseContainer>
-                <div className="grid grid-cols-2 mt-10 pb-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 pb-10" data-aos="fade-up" data-aos-delay="300">
                     <div className="flex items-center">
                         <div>
                             <div className="mb-4">

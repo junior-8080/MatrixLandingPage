@@ -9,13 +9,13 @@ const LatestArticles = () => {
         <div className="py-32">
             <BaseContainer>
                 <div>
-                    <div>
+                    <div data-aos="fade-up" data-aos-delay="300">
                         <p className="text-center text-3xl font-bold py-4">Latest Articles</p>
                         <p className="text-center text-sm py-4 text-primary_dark_200">Sharing is caring, thus we provide you with the latest information in our blog section.</p>
                     </div>
                     <div className="flex justify-center flex-wrap">
                         {
-                            articles.map(article => <div className="w-[15%] mr-6">
+                            articles.map(article => <div className="lg:w-[15%] w-[60%] mr-6" data-aos="fade-up" data-aos-delay="300">
                                 <div className="w-full">
                                     <img src={article.image} alt={article.title} className="w-full rounded-lg" />
                                 </div>

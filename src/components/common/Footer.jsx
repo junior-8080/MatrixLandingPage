@@ -9,14 +9,14 @@ const Footer = () => {
     return (
         <div style={{ backgroundImage: "linear-gradient(180deg, #FFFFFF 0%, #F1F6FD 36.46%)" }}>
             <BaseContainer>
-                <div className="flex justify-between items-center py-5">
-                    <div>
+                <div className="flex justify-between items-center py-5 lg:flex-row flex-col">
+                    <div data-aos="fade-up" data-aos-delay="300">
                         <p className="text-sm text-gray-400">SwiftSustain all rights reserved.</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-up" data-aos-delay="300">
                         <img src={Logo} alt="logo" width={"120px"} />
                     </div>
-                    <div>
+                    <div data-aos="fade-up" data-aos-delay="300">
                         {
                             socialHandles.map(item => <Link to={item.url} className="mr-4">
                                 <i className={item.icon}></i>

@@ -11,7 +11,7 @@ const About = () => {
     return (
 
         <BaseContainer>
-            <div className="grid grid-cols-2 py-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 py-20" data-aos="fade-up" data-aos-delay="200">
                 <div>
                     <p className="text-4xl mb-6 font-bold">What is MRV?</p>
                     {
@@ -27,16 +27,16 @@ const About = () => {
                         </div>)
                     }
                 </div>
-                <div className="flex flex-wrap justify-center">
-                    <div className="flex items-center mr-6">
-                        <img src={Img2} alt="challenges" className="rounded-lg"/>
+                <div className="flex flex-wrap justify-center lg:mt">
+                    <div className="flex items-center mr-6 lg:mb-0 mb-2">
+                        <img src={Img2} alt="challenges" className="rounded-lg" />
                     </div>
                     <div>
                         <div className="mb-6 rounded-lg">
-                            <img src={Img1}alt="challenges"  className="rounded-lg"/>
+                            <img src={Img1} alt="challenges" className="rounded-lg" />
                         </div>
                         <div>
-                            <img src={Img1} alt="challenges" className="rounded-lg"/>
+                            <img src={Img1} alt="challenges" className="rounded-lg" />
                         </div>
                     </div>
                 </div>
