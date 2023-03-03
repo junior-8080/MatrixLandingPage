@@ -1,24 +1,26 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import Logo from "../../images/Logo.svg";
-import { socialHandles } from '../../utils/data';
 import BaseContainer from './BaseContainer';
 
 
-const Footer = () => {
+const Footer = ({ socialHandles }) => {
     return (
-        <div style={{ backgroundImage: "linear-gradient(180deg, #FFFFFF 0%, #F1F6FD 36.46%)" }}>
+        <div style={{ backgroundImage: "linear-gradient(180deg, #FFFFFF 0%, #F1F6FD 36.46%)" }} >
             <BaseContainer>
                 <div className="flex justify-between items-center py-5 lg:flex-row flex-col">
-                    <div data-aos="fade-up" data-aos-delay="300">
+                    <div>
                         <p className="text-sm text-gray-400">SwiftSustain all rights reserved.</p>
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="300">
-                        <img src={Logo} alt="logo" width={"120px"} />
+                    <div>
+                        <HashLink smooth to={"/#home"}>
+                            <img src={Logo} alt="logo" width={"120px"} />
+                        </HashLink>
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="300">
+                    <div>
                         {
-                            socialHandles.map(item => <Link to={item.url} className="mr-4">
+                            socialHandles.map((item, index) => <Link to={item.url} className="mr-4" key={index}>
                                 <i className={item.icon}></i>
                             </Link>)
                         }

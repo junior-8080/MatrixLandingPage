@@ -37,19 +37,19 @@ export const socialHandles = [
 export const navs = [
   {
     name: "M.R.V Challenges",
-    url: "/",
+    url: "/#challenges",
   },
   {
     name: "Solutions",
-    url: "/about",
+    url: "/#about",
   },
   {
     name: "Meet the Team",
-    url: "",
+    url: "/#team",
   },
   {
     name: "Blog",
-    url: "",
+    url: "/#blogs",
   },
 ];
 
@@ -58,16 +58,20 @@ export const aboutMrv = [
     title: "Measurement",
     description:
       "Measuring the expected carbon removal, pre feasibility study, and impact the local community.",
+      image: Image,
   },
   {
     title: "Reporting",
     description:
       "Report pre-feasibility study and collected data for assessment and monitoring",
+      image: Image,
   },
+
   {
     title: "Verification",
     description:
       "Verify and validate based on the standard registries methodology",
+      image: Image,
   },
 ];
 

@@ -1,10 +1,9 @@
 import React from 'react';
-import { challenges } from '../../utils/data';
 import BaseContainer from '../common/BaseContainer';
 
-const Challenges = () => {
+const Challenges = ({ challenges }) => {
     return (
-        <div className="py-32" data-aos="fade-up" data-aos-delay="300">
+        <div className="py-32" data-aos="fade-up" data-aos-delay="300" id="challenges">
             <BaseContainer>
                 <div>
                     <p className="text-center text-4xl font-bold py-5">Current Challenges</p>
@@ -12,7 +11,7 @@ const Challenges = () => {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
                     {
-                        challenges.map(challenge => <div className="shadow-lg lg:w-[60%] w-full mr-auto ml-auto py-10 px-5 rounded-lg" style={{ backgroundImage: `${challenge.cardBg}` }}>
+                        challenges.map(challenge => <div className="shadow-lg lg:w-[60%] w-full mr-auto ml-auto py-10 px-5 rounded-lg" style={{ backgroundImage: `${challenge.cardBg}` }} key={challenge.title}>
                             <p className="text-center font-semibold">{challenge.title}</p>
                             <p className="text-center">{challenge.description}</p>
                         </div>)

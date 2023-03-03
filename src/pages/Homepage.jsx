@@ -7,7 +7,8 @@ import Solutions from '../components/Homepage/Solutions';
 import Team from '../components/Homepage/Team';
 import WaitList from '../components/Homepage/WaitList';
 import LatestArticles from '../components/Homepage/LatestArticles';
-// import Navbar from '../components/Homepage/Navbar';
+import { aboutMrv, articles, challenges, members, socialHandles, solutions } from '../utils/data';
+
 
 
 
@@ -16,14 +17,14 @@ const Homepage = () => {
         <div>
             <div>
                 <Banner />
-                <About />
-                <Challenges />
-                <Solutions />
-                <Team />
+                <About aboutMrv={aboutMrv} />
+                <Challenges challenges={challenges} />
+                <Solutions solutions={solutions} />
+                <Team members={members} />
                 <WaitList />
-                <LatestArticles />
+                <LatestArticles articles={articles} />
             </div>
-            <Footer />
+            <Footer socialHandles={socialHandles} />
         </div>
 
     );

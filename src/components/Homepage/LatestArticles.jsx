@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { articles } from '../../utils/data';
 import BaseContainer from '../common/BaseContainer';
 
 
-const LatestArticles = () => {
+const LatestArticles = ({ articles }) => {
     return (
-        <div className="py-32">
+        <div className="py-32" id="blogs">
             <BaseContainer>
                 <div>
                     <div data-aos="fade-up" data-aos-delay="300">
@@ -15,7 +14,7 @@ const LatestArticles = () => {
                     </div>
                     <div className="flex justify-center flex-wrap">
                         {
-                            articles.map(article => <div className="lg:w-[15%] w-[60%] mr-6" data-aos="fade-up" data-aos-delay="300">
+                            articles.map(article => <div className="lg:w-[15%] w-[60%] mr-6" data-aos="fade-up" data-aos-delay="300" key={article.title}>
                                 <div className="w-full">
                                     <img src={article.image} alt={article.title} className="w-full rounded-lg" />
                                 </div>
