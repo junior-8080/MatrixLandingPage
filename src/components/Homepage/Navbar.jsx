@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="flex justify-between" id="home">
             <div>
                 <HashLink smooth to="/">
-                    <img src={Logo} alt="logo" width={"100px"} />
+                    <img src={Logo} alt="logo" width={"120px"} />
                 </HashLink>
             </div>
             <div className="flex flex-wrap items-center">
