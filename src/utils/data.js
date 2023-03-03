@@ -45,7 +45,7 @@ export const navs = [
   },
   {
     name: "Meet the Team",
-    url: "/#team",
+    url: "/#teams",
   },
   {
     name: "Blog",
